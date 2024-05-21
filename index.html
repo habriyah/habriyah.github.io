@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>habpage</title>
+</head>
+<body style="background-color: rgb(152, 185, 215);">
+    <div id="header"></div>
+    <div class="container"></div>
+    <nav>
+        <img src="Habs.png" class="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+        <div class="header-text">
+            <p>Portfolio 1.0</p>
+            <h1>Dear <span>reader,</span> Im habriyah ^^</h1>
+        </div>
+
+
+    <p class="ete">.......................................................................</p>
+    <h3 class="t1">Under maintenance</h3>
+    <p class="ete">......................................................................</p>
+
+    <h2>Profile </h2>
+    <div id="contaaiher1">
+        <img src="./WhatsApp Image 2024-05-16 at 22.29.57_d9554bd1.jpg" alt="">
+
+        <p>Hey there! I'm Habriyah or hab :P,borned and raised in Selangor. A proud selangorian here.</p>
+        <p> Currently, you can find me starting my journey into the world of computer science at the International Islamic University Malaysia. <br>
+        Also, I'm a level 0.5 programmer so do not expect much from me :></p>
+    </div>
+    ------------------About-------------------
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Screenshot 2024-05-18 200304.png">
+                </div>
+                <div class="about-col-2"></div>
+                    <h1 class="sub-title">ABout me :></h1>
+                    <div style="background-color: antiquewhite;">
+                    <p>Full name : Nur Habriyah <br> Date of Birth : 13 October 2004 <br> Age : 20 <br>Address : Taman Mentari, Semenyih</p>
+                </div>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>1. </span><br>Editing</li>
+                            <li><span>2. </span><br>Canva</li>
+                            <li><span>3. </span><br>yap</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>studying</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - Current </span><br>Student at IIUM</li>
+                            <li><span>2022 - 2023</span><br>Engine at CFS</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    -----------------
+    <script
+    >
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+        }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    </script>
+</body>
+</html>
